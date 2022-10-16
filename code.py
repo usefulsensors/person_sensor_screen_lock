@@ -35,13 +35,18 @@ PERSON_SENSOR_RESULT_BYTE_COUNT = struct.calcsize(PERSON_SENSOR_RESULT_FORMAT)
 # How long to pause between sensor polls.
 PERSON_SENSOR_DELAY = 0.2
 
-# Parameters to control the screen locking behavior.
+# How large a face needs to be to count.
 MAIN_FACE_MIN_WIDTH = 32
 MAIN_FACE_MIN_HEIGHT = 32
 
-# How long to wait to take action, units are iterations through the main loop.
-MAIN_FACE_TIMEOUT_COUNT = int(5 / PERSON_SENSOR_DELAY)
-LOOKIE_LOO_TIMEOUT_COUNT = int(1 / PERSON_SENSOR_DELAY)
+# How long to wait to take the actions. Alter these to adjust the behavior.
+MAIN_FACE_TIMEOUT_SECONDS = 5
+LOOKIE_LOO_TIMEOUT_SECONDS = 1
+
+# Convert timeout seconds into loop iteration counts.
+MAIN_FACE_TIMEOUT_COUNT = int(MAIN_FACE_TIMEOUT_SECONDS / PERSON_SENSOR_DELAY)
+LOOKIE_LOO_TIMEOUT_COUNT = int(
+    LOOKIE_LOO_TIMEOUT_SECONDS / PERSON_SENSOR_DELAY)
 
 # The Pico doesn't support board.I2C(), so check before calling it. If it isn't
 # present then we assume we're on a Pico and call an explicit function.

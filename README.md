@@ -1,5 +1,5 @@
 # Person Sensor Screen Locker
-How to lock a laptop screen using a Person Sensor.
+How to automatically lock a laptop screen using a Person Sensor.
 
 ## Introduction
 
@@ -64,6 +64,11 @@ It will also attempt to minimize the current window if it detects somebody
 looking over your shoulder for more than a second.
 
 ## Next Steps
+
+The timings for the screen locking and window minimization are controlled by the
+`MAIN_FACE_TIMEOUT_SECONDS` and `LOOKIE_LOO_TIMEOUT_SECONDS` values in the code.
+You can also change how large the face needs to be to be counted with the
+`MAIN_FACE_MIN_WIDTH` and `MAIN_FACE_MIN_HEIGHT` variables.
 
 This project is intended as an example of what's possible when you can access
 ML capabilities as simply as any other hardware component. We're looking forward
