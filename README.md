@@ -46,7 +46,7 @@ file viewer, go to the `lib` folder within the unpacked bundle and copy the
 `adafruit_hid` directory into the `lib` folder on the `CIRCUITPYTHON` drive.
 This should install the library we need to emulate a keyboard.
 
-# Customize for your OS
+## Customize for your OS
 
 If you're on Windows, the code in this repository should work with no changes.
 On MacOS or Linux you'll need to modify what keys are sent to cause the screen
