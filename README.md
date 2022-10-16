@@ -58,10 +58,13 @@ options for the different operating systems.
 Now your Trinkey is set up, copy the `code.py` file from this repository into
 the `CIRCUITPYTHON` drive. You should notice that the green LED on the Person
 Sensor lights up when it sees your face. If you point it away from yourself for
-more than five seconds, you should find that the screen locks!
+more than five seconds, you should find that the screen locks! It will also
+attempt to minimize the current window if it detects somebody looking over your
+shoulder for more than a second.
 
-It will also attempt to minimize the current window if it detects somebody
-looking over your shoulder for more than a second.
+The sensor needs to be the right way up, with the connector at the top, and
+pointing towards you. If you have a long enough Qwiic cable, you can try
+mounting it on the top of your laptop screen.
 
 ## Next Steps
 
