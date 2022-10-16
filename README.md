@@ -76,6 +76,6 @@ You can also change how large the face needs to be to be counted with the
 This project is intended as an example of what's possible when you can access
 ML capabilities as simply as any other hardware component. There's also an
 Arduino version available at [github.com/robotastic/useful-autolock](https://github.com/robotastic/useful-autolock).
-You can find out more about the Person Sensor from our [full developer guide](https://usfl.ink/ps_dev).
+and you can find out more about the Person Sensor from our [full developer guide](https://usfl.ink/ps_dev).
 We're looking forward to seeing what the creative minds of the maker community
 come up with, so please let us know how you get on!
